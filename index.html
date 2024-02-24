@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de Serviço</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea,
+        input[type="datetime-local"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ordem de Serviço</h1>
+    <center>
+    <img src="Logo Solucom Telecom.png" width="100px" height="80px">
+    </center><br><br>
+    <form>
+        <label for="nomeCliente">Nome do Cliente:</label><br>
+        <input type="text" id="nomeCliente" name="nomeCliente"><br>
+
+        <label for="servicoExecutado">Serviço Executado:</label><br>
+        <textarea id="servicoExecutado" name="servicoExecutado" rows="4" cols="50"></textarea><br>
+
+        <label for="dataHora">Data e Hora:</label><br>
+        <input type="datetime-local" id="dataHora" name="dataHora"><br>
+
+        <input type="submit" value="Salvar"><br><br>
+        <button type="button" id="enviarEmail">Enviar E-mail</button>
+        <button type="button" id="enviarWhatsapp">Enviar WhatsApp</button>
+    </form>
+    <script>
+        // Script JavaScript aqui (para enviar e-mail e WhatsApp)
+    </script>
+</body>
+</html>
